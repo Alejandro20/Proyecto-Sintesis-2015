@@ -1,0 +1,666 @@
+
+@font-face{	
+	font-family:"Sportsites"; src:url(fonts/sportsites.ttf);
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+p{color:white;}
+
+a{text-decoration:none;}
+
+	a:hover{text-shadow: 0 0 8px #FF0000;}
+
+.boto{
+	background-color:#bdc3c7;
+	border-radius:20px;
+}
+
+
+#oculto{
+	display:none;
+	visibility:hidden;
+}
+	
+textarea{
+	width:100%; height:auto;
+}
+
+table{
+	width:100%; height:auto;
+	text-align:center;
+	border:black 2px solid;
+	background:black; 
+	font-family:"Sportsites";
+}
+
+td{
+	width:auto;
+	border:black 2px solid;
+	background:white;
+	font-size:1.5em;
+	background:#CCC;
+}
+	
+	
+	
+
+	td #icon{width:40%;}
+	
+	td:last-child{width:10%;}
+
+th{
+	color:white;
+	font-size:1.5em;
+	font-weight:bold;
+}
+
+video{
+	width:100%;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+	-webkit-filter: opacity(0.8);
+}
+
+.banner{
+	 width: 100%; height: 250px;
+}
+
+.banner img{
+	width:100%;
+}
+		
+		
+		
+/* SECTIONS  */
+
+section{
+	width:100%; height:auto;
+}
+
+.titol{
+	font-size:4em;
+	font-family:"Sportsites";
+	margin-left:2%; margin-top:2%;
+}
+
+
+.contenedor, .cont_perfil{
+		display: flex;
+		width:100%;
+		margin-top:2%;
+		align-items: center;
+	}
+	
+h2{
+	font-family:"Sportsites"; color:black; font-size:3em;
+}
+
+
+
+/* LOGIN */
+
+.cont_login{
+	display: flex;
+	width:100%;
+	margin-top:2%;
+	justify-content:center;
+	flex-direction: column;
+}
+
+	.form_login{
+		display:flex;
+		width:20%; height:300px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+		.form_login input{
+			width:100%; height:30px;
+			text-align:center;
+			font-size:1.2em;
+			border-radius: 20px; border:solid #CCC;
+			margin-bottom:1%;
+		}
+
+
+.texto2{
+	margin-top:2%;
+	font-family:"Sportsites";
+	font-size:2em;
+}
+
+			
+/* FIN DE EL LOGIN */
+
+
+
+/* SITES */
+.contenedor_sites{
+	width: 100%; height: auto;
+    display: flex;
+    flex-flow: row wrap;
+	
+	
+}
+
+	.sites{
+		flex: initial;
+		width:19.6%; height: 200px;
+		display:flex;
+		align-items:flex-start;
+		margin:0.2%;
+	}
+	
+	.sites a{ width:100%; }
+	
+	#cat_admin{width:30%;}
+	
+	.sites img{
+		width:100%; height:200px;
+	}
+	
+	.sites div{
+		width:100%; height:30px;
+	}
+	
+	.sites div img{
+		width:100%; height:30px;
+		cursor:pointer;
+	}
+	
+	#icon{
+		width:10%; 
+		margin-right:2%;
+	}
+	
+	.contenedor_links{
+		display: flex;
+		width:100%;
+		margin-top:2%;
+		justify-content: center;
+	}
+	
+
+		.contenedor_links a{
+			height:60px; width:20%;
+			text-align:center; line-height:60px; color:white; font-weight:bold; font-size:1em;
+			margin-bottom:5%; margin-top:2%;
+			background-color:#099;
+			border-radius:20px;
+		}
+		
+		.titol_site{
+			width:100%; height:30px;
+			background:#CCC; opacity:0.8;
+			line-height:30px; font-family:"sportsites"; font-size:1.6em; text-align:center;
+		}
+		
+		
+		
+		/* SITE INDIVIDUAL */
+		
+		.contenedor_site_individual{
+			display: flex;
+			flex-direction: column;
+			width:43%; height:400px;
+			margin-left:5%; margin-bottom:5%;
+			background:#CCC;
+		}
+		
+		.informacion{
+			width:100%; height:400px;
+		}
+		
+		.informacion div{
+			margin-left:2%; margin-bottom:5%;
+		}
+		
+		.img_principal{
+			width:100%; height:300px;
+			background:#FFF; border:solid 2px #666;
+		}
+		
+		.img_principal img{
+			width:100%; height:300px;
+		}
+
+		.cont_imagenes_pequeña{
+			width:100%; height:100px;
+			flex-direction: row;
+			display:flex;
+			
+		}
+		
+		.cont_imagenes_pequeña div{
+			width: 20%; height:100px;
+			background:#666; border:#FFF solid 2px;
+		}
+		
+		.imagenes img{
+			width:100%; height:100px;
+		}
+
+		
+		.cont_comentario{
+			display: flex;
+			width:100%;
+			margin-top:2%;
+			justify-content:center;
+			flex-direction: column;
+		}
+		
+		.cont_comentario p{color:black;}
+		
+		.cont_comentario div{
+			width:60%;
+			margin-left:25%;
+		}
+		
+		.cont_comentario img{
+			width:5%; height:50px;
+		}
+		
+		
+		.form_comentario{width:40%;}
+		
+		.form_comentario textarea{width:40%;}
+		
+		
+		/* FIN SITE */
+		
+		
+	
+/* FIN DE SITES */
+
+
+
+
+
+/* EDITAR FLEX */
+	
+	.contenedor_column{
+		 display: flex;
+		 flex-direction: column;
+		 width: 96%;
+		 height: auto;
+		 margin-left: 4%;
+	}
+
+		
+			.contenedor_column input{
+				width:20%; height:30px;
+				text-align:center;
+				font-size:1.2em;
+				border-radius: 20px; border:solid #CCC;
+				margin-bottom:1%;
+			}	
+			
+			.contenedor_column select{
+				width:20%; height:40px;
+				text-align:center; font-size:1.5em;
+				border-radius: 20px; border:solid #CCC;
+				margin-bottom:1%;
+			}	
+			
+			.contenedor_column textarea{
+				width:30%; height:100px;
+				text-align:center;
+				font-size:1.5em;
+				border-radius: 20px; border:solid #CCC;
+				margin-bottom:1%;
+			}
+			
+			#input_img{
+				width:60%; height:30px;
+				text-align:center;
+				font-size:1.5em;
+				border-radius: 20px; border:solid #CCC;
+				margin-bottom:1%;
+			}
+	
+/* FIN EDITAR FLEX */
+
+
+
+
+
+
+/*PERFIL */
+
+	/* OPCIONES PERFIL */
+
+		.cont_perfil div{
+			display:flex;
+			width:100%; height:80px;
+			justify-content: center;
+			margin-bottom: 3%; margin-top:6%;
+		}
+		
+		.cont_perfil div a{
+			width:70%;
+			justify-content: center;
+		}
+			
+			
+		.cont_perfil input{
+			width: 100%; height:80px;
+			text-align:center;
+			font-size:1.2em;
+			border-radius: 20px; border:solid #CCC; box-shadow: 1px 3px 10px 8px #888888;
+			background-color:#bdc3c7;
+		}
+		
+		.b_copia{
+			margin-top:3%; margin-bottom:3%;
+			width: 15%; height:80px;
+			text-align:center;
+			font-size:1.2em;
+			border-radius: 20px; border:solid #000;
+			background-color:#bdc3c7;
+			box-shadow: 1px 3px 10px 8px #888888;
+		}
+		
+	/* FIN OPCIONES PERFIL */
+	
+	
+	/* EDITAR PERFIL */
+	
+	.form_editar_perfil{
+		display: flex;
+		flex-direction: column;
+		width:43%; height:500px;
+		margin-left:5%;
+	}
+	
+	.form_editar_perfil input{
+		width:100%; height:30px;
+		text-align:center;
+		font-size:1.2em;
+		border-radius: 20px; border:solid #CCC;
+		margin-bottom:1%;
+	}	
+			
+	.cont_subscripcio input{
+		height:80px; width:100%;
+		color:white; font-weight:bold; font-size:1em;
+		margin-bottom:1%;
+		background-color:#C00;
+		border-radius:20px;
+	}
+	
+	.b_radio input{
+		height:20px; width:10%;
+		margin-bottom:5%; margin-top:2%;
+	}
+	
+	.compte_bancari{flex:100%;}
+	
+		.compte_bancari input{width:72%;}
+	
+	.pagament input{
+				text-align:center;
+				font-size:1.2em;
+				border-radius: 20px; border:solid #CCC;
+				margin-bottom:1%;
+	}
+	
+	
+			
+	/*FIN EDITAR PERFIL */
+	
+
+/* FIN PERFIL */
+
+
+.contenedor_centro{
+	display: flex;
+	width:100%;
+	margin-top:1%;
+	justify-content: center;
+}
+
+.contenedor_centro_iconos{
+	display: flex;
+	width:100%;
+	margin-left:-100%;
+	margin-top:1%;
+	justify-content: flex-end;
+}
+
+
+		.form_registre{
+			display: flex;
+			flex-direction: column;
+			width:43%; height:200px;
+			margin-left:5%;
+		}
+		
+			.form_registre input{
+				width:100%; height:30px;
+				text-align:center;
+				font-size:1.2em;
+				border-radius: 20px; border:solid #CCC;
+				margin-bottom:1%;
+			}	
+			
+			
+			label{
+				font-family:"Sportsites";
+				font-size:2em;
+			}
+			
+			select{
+				width:auto; height:40px;
+				text-align:center;
+				font-size:2em;
+				border-radius: 20px; border:solid #CCC;
+				margin-bottom:1%;
+				font-family:"Sportsites";
+			}
+			
+	.subscripcio{margin-top:5%;}
+	
+	.subscripcio_hidden{
+		visibility:hidden;
+		display:none;
+	}
+
+	.registrarse input{
+		height:60px; width:20%;
+		color:white; font-weight:bold; font-size:1em;
+		margin-bottom:5%; margin-top:2%;
+		background-color:#099;
+		border-radius:20px;
+	}
+
+
+
+
+	
+/* HEADER */
+
+header{
+	width:100%; height:50px;
+	display:flex;
+	justify-content: center;
+	background:#000;	
+	border-bottom:#666 4px solid;	
+}
+
+header a{
+	color:white; font-family:"Sportsites";	
+}
+
+ /* MENU */
+	
+	#menu-icon {display: none;}
+	
+	.submenu{display:flex;}
+	
+	#logo{
+		flex:25%; height:50px;
+	}
+	
+	#logo img{
+		width:100%;
+		max-height:50px;
+	}
+	
+	nav {
+		
+		width:100%; height:50px;
+		line-height:50px;
+		font-size:3em;
+		justify-content:flex-start;
+		
+		
+	}
+		
+			nav li{
+				flex:15%;
+				display:inline-flex;
+				text-align:center;
+				list-style:none;
+				
+			}
+			
+			nav li:hover{
+				flex:15%;
+				text-align:center;
+				text-shadow: 0 0 8px #FF0000;
+				list-style:none;
+			}
+	
+	/*.espacio{
+		flex:20%;
+	}*/
+	
+	.acces {
+		display:flex;
+		width:40%;
+		justify-content: flex-end;
+		font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:white;
+		line-height: 50px;
+ 		background-image:url(imgs/menu.png);
+  		border-left: solid;
+	}
+	
+		.acces div{
+			flex:50%;
+			text-align:center;
+		}
+		
+		.tancar_sessio{
+			background-color: #c0392b;
+  			line-height: 40px;
+		}
+		
+		
+	#errors{
+		display:block;
+		width:98%;
+		border: 2px dashed #FC0509;
+		background:#F16F71;
+		color:white;
+		font-size:14px; font-weight:bold; font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+		margin-top: 0.5%; margin-left:0.5%;
+	}
+	
+	#error {
+		margin-top:0.25%;
+		margin-bottom:0.25%;
+	}
+	
+	
+/* FIN HEADER */
+	
+
+	
+	
+/* FOOTER */
+
+footer{
+	width:100%;
+}
+	
+.image_footer{
+	background-image:url(imgs/mountains.png);
+	height:64px; width:100%;
+}
+	
+.contenedor_footer{
+	display:flex; 
+	width:100%; height:230px;
+	background-color:#2C2B29;
+	flex-direction:column;
+	text-align:center;
+}
+
+.marcas{
+	display:flex; 
+	width:100%; height:200px;
+	flex-direction: row;
+}
+
+.marcas div{
+	flex:20%; height:200px;
+}
+
+.marcas img{
+	width:30%; height:100px;
+}
+
+.menu_footer{
+	display:flex; 
+	width:100%; height:100px;
+	flex-direction: row;
+}
+
+.menu_footer a{
+	flex:20%; height:100px;
+	color:white; text-align:center;font-size:1.8em; font-family:"Sportsites";
+}
+		
+.copyright{
+	width:100%; height:74px;
+	background-color:#2C2B29;
+	color:white; text-align:center;font-size:1.8em; font-family:"Sportsites";
+}
+
+.arrow_top{
+	position: fixed; 
+	bottom: 5%;
+	right:3%;	
+}
+	
+/* FIN FOOTER */
+
+
+/* SUBMENU FOOTER */
+
+.info{
+	margin-top: 4%; margin-left:4%;
+ 	height: auto; flex: 90%;
+	font-family: cursive;
+}
+
+.info p{
+	color:black;
+}
+
+.columna_izquierda, .columna_derecha{
+	flex:40%; height:300px;
+	margin:2%;
+}
+
+.columna_izquierda p, .columna derecha p{
+	color:black;
+}
+
+
+
